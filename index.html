@@ -5,46 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자기소개서</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
             margin: 0;
             padding: 0;
         }
+
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 900px;
+            margin: 60px auto;
             background: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
             text-align: center;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: -100px;
+            background: #ffffff;
+        }
+
+        h1 {
             color: #333333;
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 3em;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            letter-spacing: 1.5px;
         }
+
         h2 {
-            color: #555555;
-            border-bottom: 2px solid #eeeeee;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            color: #ff6f61;
+            border-bottom: 3px solid #ffe3e3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
         }
+
         p {
             line-height: 1.8;
             color: #666666;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.1em;
         }
+
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
+
         .info {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1em;
         }
+
         .info span {
             font-weight: bold;
             color: #333333;
+        }
+
+        .info p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+                margin-top: -70px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p, .info {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -53,29 +114,29 @@
         <h1>자기소개서</h1>
         <div class="section">
             <h2>개인 정보</h2>
-            <p class="info"><span>이름:</span> 홍길동</p>
-            <p class="info"><span>생년월일:</span> 1990년 1월 1일</p>
-            <p class="info"><span>연락처:</span> 010-1234-5678</p>
-            <p class="info"><span>이메일:</span> honggildong@example.com</p>
+            <p class="info"><span>이름:</span> 김민서</p>
+            <p class="info"><span>생년월일:</span> 2002년 11월 14일</p>
+            <p class="info"><span>연락처:</span> 010-2782-5123</p>
+            <p class="info"><span>이메일:</span> milsxo@dongyang.ac.kr</p>
         </div>
 
         <div class="section">
             <h2>학력</h2>
-            <p class="info"><span>대학교:</span> 서울대학교 컴퓨터공학과 (2010년 3월 ~ 2014년 2월)</p>
-            <p class="info"><span>고등학교:</span> 서울고등학교 (2007년 3월 ~ 2010년 2월)</p>
+            <p class="info"><span>대학교:</span> 동양미래대학교 컴퓨터소프트웨어공학과 (2024년 3월 ~ 2027년 2월)</p>
+            <p class="info"><span>고등학교:</span> 여의도고등학교 (2018년 3월 ~ 2021년 2월)</p>
         </div>
 
         <div class="section">
             <h2>경력</h2>
-            <p class="info"><span>회사:</span> ABC 회사</p>
-            <p class="info"><span>기간:</span> 2015년 3월 ~ 2020년 12월</p>
+            <p class="info"><span>회사:</span> NEXON</p>
+            <p class="info"><span>기간:</span> 2027년 3월 ~ 2032년 12월</p>
             <p class="info"><span>직무:</span> 소프트웨어 엔지니어</p>
             <p class="info"><span>주요 업무:</span> 웹 애플리케이션 개발 및 유지보수</p>
         </div>
 
         <div class="section">
             <h2>자기소개</h2>
-            <p>안녕하세요. 저는 서울대학교 컴퓨터공학과를 졸업하고, ABC 회사에서 5년간 소프트웨어 엔지니어로 근무한 홍길동입니다. 웹 애플리케이션 개발에 대한 깊은 이해와 경험을 바탕으로, 사용자 친화적이고 효율적인 소프트웨어를 만드는 것에 열정을 가지고 있습니다. 문제 해결 능력과 팀워크를 중요하게 생각하며, 항상 새로운 기술을 배우고 활용하는 데에 적극적입니다. 앞으로도 더 나은 소프트웨어를 개발하여 많은 사람들에게 도움이 되고 싶습니다.</p>
+            <p>안녕하세요. 저는 동양미래대학교 컴퓨터소프트웨어공학과를 졸업하고, NEXON 회사에서 5년간 소프트웨어 엔지니어로 근무한 김민서입니다. 웹 애플리케이션 개발에 대한 깊은 이해와 경험을 바탕으로, 사용자 친화적이고 효율적인 소프트웨어를 만드는 것에 열정을 가지고 있습니다. 문제 해결 능력과 팀워크를 중요하게 생각하며, 항상 새로운 기술을 배우고 활용하는 데에 적극적입니다. 앞으로도 더 나은 소프트웨어를 개발하여 많은 사람들에게 도움이 되고 싶습니다.</p>
         </div>
     </div>
 </body>
